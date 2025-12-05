@@ -9,7 +9,7 @@ pub(crate) use sqlx_core::type_info::*;
 #[cfg_attr(feature = "offline", derive(serde::Serialize, serde::Deserialize))]
 pub struct MySqlTypeInfo {
     pub r#type: ColumnType,
-    pub(crate) flags: ColumnFlags,
+    pub flags: ColumnFlags,
     pub(crate) collation: Collation,
 
     // [max_size] for integer types, this is (M) in BIT(M) or TINYINT(M)
