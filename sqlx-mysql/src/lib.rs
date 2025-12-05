@@ -37,6 +37,7 @@ mod migrate;
 #[cfg(feature = "migrate")]
 mod testing;
 
+pub use protocol::text::ColumnType;
 pub use arguments::MySqlArguments;
 pub use column::MySqlColumn;
 pub use connection::MySqlConnection;

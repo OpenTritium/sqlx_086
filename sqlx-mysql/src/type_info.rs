@@ -8,7 +8,7 @@ pub(crate) use sqlx_core::type_info::*;
 #[derive(Debug, Clone)]
 #[cfg_attr(feature = "offline", derive(serde::Serialize, serde::Deserialize))]
 pub struct MySqlTypeInfo {
-    pub(crate) r#type: ColumnType,
+    pub r#type: ColumnType,
     pub(crate) flags: ColumnFlags,
     pub(crate) collation: Collation,
 
